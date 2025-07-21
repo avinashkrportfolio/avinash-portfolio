@@ -1,65 +1,86 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f4f6f8;
-  scroll-behavior: smooth;
-  color: #333;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F7FB;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero/Header */
 header {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #0f172a;
-  color: white;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #3b82f6;
+  padding: 5rem 1rem;
+  background-color: #1A1A2E;
   color: #fff;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+header h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+header p {
   font-size: 1rem;
-  transition: all 0.3s ease;
+  font-style: italic;
+  margin: 0.5rem 0 2rem;
+}
+header .cta-button {
+  background-color: #7F5AF0;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+header .cta-button:hover {
+  background-color: #955CFF;
 }
 
-.cta-button:hover {
-  background-color: #2563eb;
-  transform: scale(1.05);
-}
-
-section {
-  padding: 20px;
-  margin: 20px;
-}
-
+/* Cards */
 .card {
-  background: #ffffff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  max-width: 900px;
-  transition: transform 0.3s ease;
+  background: #fff;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.card h2 {
+  font-size: 1.8rem;
+  color: #1A1A2E;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.card h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #7F5AF0;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+.card ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+.card li {
+  margin-bottom: 0.6rem;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.skill-item:hover {
-  background-color: #e0f2fe;
-  transform: scale(1.02);
-  transition: 0.3s;
-  padding: 5px;
-  border-radius: 8px;
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  header h1 { font-size: 2.4rem; }
+  .card { margin: 1.5rem 1rem; padding: 1.5rem; }
 }
