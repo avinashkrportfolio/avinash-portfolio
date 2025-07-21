@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -42,10 +42,55 @@
     <h2>Key Responsibilities</h2>
     <h3>Team Leadership and Management</h3>
     <ul>
-      <li>Lead, mentor, and manage a team of IT infrastructure technicians...</li>
-      <!-- (Keep adding the rest of the content as shown earlier) -->
+      <li>Lead, mentor, and manage a team of IT infrastructure technicians, ensuring clear communication of goals, tasks, and timelines.</li>
+      <li>Evaluate team performance, provide constructive feedback, and foster professional development and knowledge sharing.</li>
+      <li>Delegate tasks effectively, monitor individual and team progress, and ensure alignment with department and organizational objectives.</li>
+      <li>Promote a collaborative work environment that drives innovation, accountability, and continuous improvement.</li>
     </ul>
-    <!-- Repeat for other sections like Infrastructure Operations, etc. -->
+    <h3>Infrastructure Operations</h3>
+    <ul>
+      <li>Oversee the maintenance, support, and optimization of servers, storage, networking, and virtualization platforms.</li>
+      <li>Ensure high availability, scalability, and performance of all IT systems with minimal downtime.</li>
+      <li>Coordinate with application, security, and cloud teams to support system upgrades, patches, and infrastructure migrations.</li>
+      <li>Ensure robust data backup, disaster recovery, and business continuity planning, with periodic testing and updates.</li>
+      <li>Monitor and manage IT assets and capacity planning to support future growth and change.</li>
+    </ul>
+    <h3>Project Management</h3>
+    <ul>
+      <li>Lead end-to-end planning, execution, and delivery of infrastructure projects, ensuring timelines, budgets, and quality standards are met.</li>
+      <li>Work closely with stakeholders and business units to understand technical and operational requirements and translate them into actionable project deliverables.</li>
+      <li>Prepare and maintain detailed project plans, risk assessments, status reports, and documentation to support project governance.</li>
+      <li>Facilitate cross-functional collaboration to manage project dependencies and mitigate risks.</li>
+    </ul>
+    <h3>Problem Resolution</h3>
+    <ul>
+      <li>Act as a senior escalation point for critical infrastructure incidents, assisting in root cause analysis and resolution.</li>
+      <li>Develop strategies and implement tools for proactive monitoring, system health checks, and early problem detection.</li>
+      <li>Establish best practices and knowledge base documentation for incident response and troubleshooting.</li>
+    </ul>
+    <h3>Strategic Planning</h3>
+    <ul>
+      <li>Collaborate with senior leadership to align infrastructure initiatives with organizational goals and long-term IT strategy.</li>
+      <li>Regularly assess current and future infrastructure needs, providing recommendations for upgrades, cost savings, and performance improvement.</li>
+      <li>Evaluate and adopt emerging technologies to drive operational efficiency and innovation.</li>
+    </ul>
+    <h3>Compliance and Documentation</h3>
+    <ul>
+      <li>Ensure infrastructure systems comply with internal policies, regulatory requirements, and industry best practices (e.g., ISO 27001).</li>
+      <li>Maintain accurate and up-to-date documentation of IT infrastructure, processes, policies, and change logs.</li>
+      <li>Participate in internal and external audits, support certification efforts, and manage compliance tracking.</li>
+      <li>Assist in coordinating certification processes to ensure timely acquisition and renewal of necessary security and compliance certificates.</li>
+    </ul>
+    <h3>Information Security</h3>
+    <ul>
+      <li>Monitor and assess the company’s IT networks to identify and respond to potential security threats or breaches.</li>
+      <li>Support incident investigations and implement mitigation plans in collaboration with the security team.</li>
+      <li>Assist in preparing risk assessments in the industrial sector, identify risk reduction measures, and coordinate their implementation.</li>
+      <li>Promote information security awareness and provide training to employees on safe use of technology and data protection best practices.</li>
+      <li>Recommend security enhancements and upgrades to leadership to improve the organization's security posture.</li>
+      <li>Ensure full adherence to ISMS (Information Security Management System) processes; participate in Change Advisory Board (CAB) meetings to ensure secure infrastructure changes.</li>
+      <li>Conduct security reviews and inspections of electronic devices (e.g., portable electronic devices, laptops, tablets), especially for compliance in high-security environments such as FBI space.</li>
+    </ul>
   </section>
 
   <section class="card" data-aos="fade-up">
@@ -57,4 +102,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>
-</html>
+</html>"""
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html)
