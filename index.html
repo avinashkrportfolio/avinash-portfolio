@@ -1,4 +1,4 @@
-html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -10,6 +10,7 @@ html = """<!DOCTYPE html>
 <body>
   <header>
     <h1 data-aos="fade-down" data-aos-duration="1000">Avinash Kumar</h1>
+    <h3 style="text-align:center;" data-aos="fade-up" data-aos-delay="250">System Administrator</h3>
     <p data-aos="fade-up" data-aos-delay="300">(System. Stability. Success)</p>
     <a href="Avinash_Kumar_CV.pdf" class="cta-button" download>Download CV</a>
   </header>
@@ -40,6 +41,7 @@ html = """<!DOCTYPE html>
 
   <section class="card" data-aos="fade-up">
     <h2>Key Responsibilities</h2>
+
     <h3>Team Leadership and Management</h3>
     <ul>
       <li>Lead, mentor, and manage a team of IT infrastructure technicians, ensuring clear communication of goals, tasks, and timelines.</li>
@@ -47,6 +49,7 @@ html = """<!DOCTYPE html>
       <li>Delegate tasks effectively, monitor individual and team progress, and ensure alignment with department and organizational objectives.</li>
       <li>Promote a collaborative work environment that drives innovation, accountability, and continuous improvement.</li>
     </ul>
+
     <h3>Infrastructure Operations</h3>
     <ul>
       <li>Oversee the maintenance, support, and optimization of servers, storage, networking, and virtualization platforms.</li>
@@ -55,6 +58,7 @@ html = """<!DOCTYPE html>
       <li>Ensure robust data backup, disaster recovery, and business continuity planning, with periodic testing and updates.</li>
       <li>Monitor and manage IT assets and capacity planning to support future growth and change.</li>
     </ul>
+
     <h3>Project Management</h3>
     <ul>
       <li>Lead end-to-end planning, execution, and delivery of infrastructure projects, ensuring timelines, budgets, and quality standards are met.</li>
@@ -62,18 +66,21 @@ html = """<!DOCTYPE html>
       <li>Prepare and maintain detailed project plans, risk assessments, status reports, and documentation to support project governance.</li>
       <li>Facilitate cross-functional collaboration to manage project dependencies and mitigate risks.</li>
     </ul>
+
     <h3>Problem Resolution</h3>
     <ul>
       <li>Act as a senior escalation point for critical infrastructure incidents, assisting in root cause analysis and resolution.</li>
       <li>Develop strategies and implement tools for proactive monitoring, system health checks, and early problem detection.</li>
       <li>Establish best practices and knowledge base documentation for incident response and troubleshooting.</li>
     </ul>
+
     <h3>Strategic Planning</h3>
     <ul>
       <li>Collaborate with senior leadership to align infrastructure initiatives with organizational goals and long-term IT strategy.</li>
       <li>Regularly assess current and future infrastructure needs, providing recommendations for upgrades, cost savings, and performance improvement.</li>
       <li>Evaluate and adopt emerging technologies to drive operational efficiency and innovation.</li>
     </ul>
+
     <h3>Compliance and Documentation</h3>
     <ul>
       <li>Ensure infrastructure systems comply with internal policies, regulatory requirements, and industry best practices (e.g., ISO 27001).</li>
@@ -81,6 +88,7 @@ html = """<!DOCTYPE html>
       <li>Participate in internal and external audits, support certification efforts, and manage compliance tracking.</li>
       <li>Assist in coordinating certification processes to ensure timely acquisition and renewal of necessary security and compliance certificates.</li>
     </ul>
+
     <h3>Information Security</h3>
     <ul>
       <li>Monitor and assess the company’s IT networks to identify and respond to potential security threats or breaches.</li>
@@ -102,7 +110,4 @@ html = """<!DOCTYPE html>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>
-</html>"""
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html)
+</html>
